@@ -12,8 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "animejs": "^2.2.0",
     "data-point": "^1.7.0",
     "fs": "0.0.1-security",
+    "glamor": "^2.20.40",
+    "glamorous": "^4.11.4",
+    "lodash": "^4.17.4",
     "net": "^1.0.2",
     "next": "^4.2.3",
     "react": "^16.2.0",
