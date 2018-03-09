@@ -1,6 +1,7 @@
 import * as DataPoint from 'data-point'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
+import anime from 'animejs'
 import glamorous, { Div, H1, Img } from 'glamorous'
 
 
@@ -79,7 +80,7 @@ class CatComponent extends Component {
              ". c c c c c c ."`,
           alignItems: 'start',
         }
-       }>
+       } ref = {(ref) => this.animateMe(ref)}>
         <Img css = {{ gridArea: 'a'}} width = '600' height = '600' src = { this.state.node.images.url }/>  
         <H1 css = {{color: 'white', fontFamily: 'Impact', gridArea: 'c' }}> { this.state.node.trivial.fact } </H1>
       </Div>

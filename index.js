@@ -14,7 +14,6 @@ app.prepare()
 
   server.get('/a', (req, res) => {
     request.get('http://catfact.ninja/fact', (err, response, body) => {
-      console.log(response.body)
       res.send(response.body)
     })
 
@@ -25,7 +24,6 @@ app.prepare()
     // return app.render(req, res, '/a', req.query)
     request.get('http://thecatapi.com/api/images/get?format=xml&results_per_page=20', (err, response, body) => {
       const response_JSON = xmlParser.toJson(response.body)
-      console.log(response_JSON)
       res.send(response_JSON)
     })
   })
